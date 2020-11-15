@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <h2 class="title">Todo List</h2>
+   <div id="app">
+      <div class="content">
+         <div class="input">
+          <input type="text" placeholder="please enter……" v-model="value">
+          <button @click="submit">submit</button>
+         </div>
+         <div class="container">
+            <ul>
+               <li v-for="(item,index) in items">{{item}}<span class="cross"><i class="fa fa-times" aria-hidden="true" @click="remove(index)"></i></span></li>
+            </ul>
+            <div class="info" v-if="items.length!=0">
+               <h5><span>{{items.length}}</span>  left</h5>
+               <button @click="clear">clear</button>
+            </div>
+         </div>
+      </div> 
+   </div>
+
+
+
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+   <script src="vue.js"></script>
+   <script src="main.js"></script>
+   
+</body>
+</html>

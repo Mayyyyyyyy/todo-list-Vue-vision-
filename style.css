@@ -1,0 +1,114 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(157, 83, 83);
+    width:100vw;
+    height:100vh;
+    position: relative;
+}
+
+#app{
+    background-color: rgb(96, 123, 108);
+    width:40%;
+    height:90%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 5px 5px 5px rgb(46, 45, 45);
+}
+
+ul{
+    list-style: none;
+}
+
+.title{
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%,-10%);
+}
+
+.content{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+.input{
+    width:70%;
+    height:30%;
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%,-10%);
+}
+
+.input input{
+    width:300px;
+    height:40px;
+}
+
+.input button{
+    width:70px;
+    height:40px;
+    background-color: teal;
+    outline: white;
+}
+
+.input button:hover{
+    background-color: rgb(25, 181, 181);
+}
+
+
+.container{
+    width:100%;
+    height:70%;
+}
+ul{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-40%);
+}
+
+li{
+    background-color: white;
+    width: 380px;
+    text-align: center;
+    padding:10px 0;
+    margin:10px 0;
+    text-align: left;
+}
+
+li>span{
+    float: right;
+    padding:0 10px;
+    display: none;
+}
+
+li:hover .cross{
+    display: block;
+}
+
+.info{
+    width:100%;
+    position: absolute;
+    bottom:5%;
+    left:50%;
+    transform: translate(-50%,-5%);
+    display: flex;
+    justify-content: space-between;
+    padding:0 15%;
+}
+
+.info button{
+    background: none;
+    outline: none;
+}
+
+
